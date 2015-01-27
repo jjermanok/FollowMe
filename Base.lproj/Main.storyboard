@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Untimed-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MNKViewControllerUntimed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1e5-Q2-yM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="n7z-0c-gJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvF-dX-tEH">
+                                <rect key="frame" x="29" y="32" width="271" height="76"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="52"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KW-vQ-qEM">
+                                <rect key="frame" x="75" y="266" width="152" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EW3-Ip-SGO" kind="modal" identifier="" animates="NO" id="zE8-Ta-6pL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycG-4X-A1k">
+                                <rect key="frame" x="7" y="103" width="306" height="42"/>
+                                <fontDescription key="fontDescription" name="Cochin-Italic" family="Cochin" pointSize="17"/>
+                                <state key="normal" title="An incredible game made by Jake Jermanok">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAt-lK-fMi">
+                                <rect key="frame" x="75" y="331" width="152" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Start level 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45565716039999998" green="1" blue="0.5490039525" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="16"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YxM-YN-cMT">
+            <objects>
+                <viewController id="EW3-Ip-SGO" customClass="MNKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vdU-Em-M9z"/>
+                        <viewControllerLayoutGuide type="bottom" id="jfa-G4-PUH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v67-BS-ah4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-eC-zt4">
+                                <rect key="frame" x="29" y="292" width="100" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="119498475589498995button-red_benji_park_01.svg.med.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kt1-8W-VtC" kind="modal" animates="NO" id="4Jz-Uf-sLu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55V-Zm-YKY">
+                                <rect key="frame" x="29" y="44" width="259" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Press the green button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfp-Ow-DM9">
+                                <rect key="frame" x="178" y="292" width="100" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="tsunami-md.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EcZ-8b-a9y" kind="modal" identifier="" animates="NO" id="BCR-VI-Lgs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-CI-8no">
+                                <rect key="frame" x="10" y="10" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQG-4x-tpf">
+                                <rect key="frame" x="141" y="127" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26152841230000001" green="0.7024592395" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BrV-DR-OIk"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="wQG-4x-tpf" id="SQj-kw-ABi"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="mP5-Nm-lTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsM-nS-SfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="16"/>
+        </scene>
+        <!--View Controller Untimed-->
+        <scene sceneID="oZe-ze-bYn">
+            <objects>
+                <viewController id="ymF-vc-jUy" customClass="MNKViewControllerUntimed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hgc-jH-p2n"/>
+                        <viewControllerLayoutGuide type="bottom" id="sAy-jg-4uU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yvI-J9-2xh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvC-CO-a8R">
+                                <rect key="frame" x="39" y="188" width="242" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="You ran out of time :(">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-0p-hal">
+                                <rect key="frame" x="80" y="468" width="161" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="bwb-ho-V9M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSK-Yn-uR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="718"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s2L-Hu-9Kk">
+            <objects>
+                <viewController id="EcZ-8b-a9y" customClass="MNKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0BA-uk-gvF"/>
+                        <viewControllerLayoutGuide type="bottom" id="5tV-Wq-eaE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ct-uH-TfN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-J5-ZR7">
+                                <rect key="frame" x="12" y="10" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isb-eY-31N">
+                                <rect key="frame" x="89" y="46" width="143" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Type &quot;YOLO&quot;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-iF-5eg">
+                                <rect key="frame" x="141" y="124" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bom-cv-qd6">
+                                <rect key="frame" x="112" y="269" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textExited:" destination="EcZ-8b-a9y" eventType="editingDidEndOnExit" id="PBz-3i-1f9"/>
+                                    <action selector="textExited:" destination="EcZ-8b-a9y" eventType="editingDidEnd" id="as4-hb-gvs"/>
+                                    <action selector="textExited:" destination="EcZ-8b-a9y" eventType="editingChanged" id="hWD-Rm-9bA"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50165845129752817" blue="0.38249599281935853" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="6b5-iF-5eg" id="lcX-UV-3wI"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="jiZ-5l-G7g"/>
+                        <segue destination="FCV-I3-KAV" kind="modal" identifier="segueAfterText" animates="NO" id="77n-cR-Zcu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rU-5L-wYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="16"/>
+        </scene>
+        <!--Dots View Controller-->
+        <scene sceneID="Jj5-yG-9bF">
+            <objects>
+                <viewController id="FCV-I3-KAV" customClass="MNKDotsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uJj-qM-nPI"/>
+                        <viewControllerLayoutGuide type="bottom" id="D69-cn-vzn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8oE-br-Zv2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRD-5U-3tR">
+                                <rect key="frame" x="141" y="124" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbT-xC-ZCw">
+                                <rect key="frame" x="58" y="46" width="204" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Connect the dots">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-NH-srG">
+                                <rect key="frame" x="12" y="9" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a-black-circle-md.png" translatesAutoresizingMaskIntoConstraints="NO" id="uts-Y2-IP0">
+                                <rect key="frame" x="50" y="400" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a-black-circle-md.png" translatesAutoresizingMaskIntoConstraints="NO" id="v3C-wL-gaV">
+                                <rect key="frame" x="243" y="269" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99841086876199436" blue="0.38231684842048663" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dot1" destination="uts-Y2-IP0" id="2H3-fc-tII"/>
+                        <outlet property="dot2" destination="v3C-wL-gaV" id="wdN-hm-uEa"/>
+                        <outlet property="timerLabel" destination="NRD-5U-3tR" id="bkD-qP-Am7"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="nQz-b3-Ywf"/>
+                        <segue destination="Jxk-eR-zKt" kind="modal" identifier="outOfDots" animates="NO" id="sc0-Mi-yDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZ0-Fz-ibK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="16"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JDR-2k-P5r">
+            <objects>
+                <viewController id="Jxk-eR-zKt" customClass="MNKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j7n-mM-sNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="z5z-30-Fu1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="743-ib-bDm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WJ-1a-a1A">
+                                <rect key="frame" x="78" y="46" width="164" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Whats wrong?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzM-6O-AUM">
+                                <rect key="frame" x="141" y="120" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL9-9b-ELu">
+                                <rect key="frame" x="13" y="13" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3lQ-Ie-M93" kind="modal" animates="NO" id="dLx-4V-nIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-BT-iV4">
+                                <rect key="frame" x="31" y="330" width="100" height="100"/>
+                                <state key="normal" title="Button" image="119498475589498995button-red_benji_park_01.svg.med.png"/>
+                                <connections>
+                                    <segue destination="Xvb-DD-33f" kind="modal" animates="NO" id="zup-3g-gRq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPY-nN-l3P">
+                                <rect key="frame" x="186" y="277" width="100" height="100"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <segue destination="Xvb-DD-33f" kind="modal" animates="NO" id="Cmb-WT-uy2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-wc-aEw">
+                                <rect key="frame" x="156" y="428" width="100" height="100"/>
+                                <state key="normal" title="Button" image="a-black-circle-md.png"/>
+                                <connections>
+                                    <segue destination="Xvb-DD-33f" kind="modal" animates="NO" id="iQk-P6-azf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62619692538365768" green="1" blue="0.93423505487007141" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="BzM-6O-AUM" id="RNU-Pz-a0c"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="3rC-H6-SKx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Li0-IK-qbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="16"/>
+        </scene>
+        <!--View Controller Untimed-->
+        <scene sceneID="jbV-SS-7rS">
+            <objects>
+                <viewController id="Xvb-DD-33f" customClass="MNKViewControllerUntimed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pcb-5Q-OP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="mtF-hM-yp1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eii-D4-IeX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3G-h6-hfb">
+                                <rect key="frame" x="80" y="471" width="161" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuf-Ja-aRK">
+                                <rect key="frame" x="31" y="179" width="258" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Thats not it, look closer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2u-Fn-31S">
+                                <rect key="frame" x="80" y="471" width="161" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="G8C-H0-f9C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irm-8d-J0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="686"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ubG-eQ-CMh">
+            <objects>
+                <viewController id="3lQ-Ie-M93" customClass="MNKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yFH-he-Dyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="z4G-N3-6jc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="azf-u7-tEe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qp-uU-VUQ">
+                                <rect key="frame" x="20" y="14" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj3-q9-P6q">
+                                <rect key="frame" x="66" y="44" width="188" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Push my buttons">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="g46-uk-I7G" kind="modal" identifier="segueAfterButtons" animates="NO" id="OWK-lX-e4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8K-3M-LoF">
+                                <rect key="frame" x="5" y="98" width="100" height="100"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button1Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="XU0-SF-0EB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-UV-EKR">
+                                <rect key="frame" x="20" y="333" width="50" height="50"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button5Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="891-uP-ebB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-vx-pdA">
+                                <rect key="frame" x="201" y="217" width="75" height="75"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button4Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="OeQ-gw-eK4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-dw-vCF">
+                                <rect key="frame" x="48" y="232" width="75" height="75"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button3Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="v0k-JK-7cE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufj-aH-PK3">
+                                <rect key="frame" x="30" y="467" width="75" height="75"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button8Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="Odk-Dh-clU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-gF-eNl">
+                                <rect key="frame" x="141" y="123" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA7-8w-3Qe">
+                                <rect key="frame" x="233" y="123" width="50" height="50"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button2Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="ALB-b1-NfX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-fb-yNV">
+                                <rect key="frame" x="118" y="360" width="100" height="100"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button7Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="zBr-OP-NjO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bN-7D-L9E">
+                                <rect key="frame" x="245" y="342" width="50" height="50"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button6Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="AGe-hM-14I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSu-of-Bj9">
+                                <rect key="frame" x="221" y="467" width="50" height="50"/>
+                                <state key="normal" title="Button" image="tsunami-md.png"/>
+                                <connections>
+                                    <action selector="button9Pushed:" destination="3lQ-Ie-M93" eventType="touchUpInside" id="Odf-Wl-Uj6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46177183994758619" blue="0.86091657161817392" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button1" destination="Z8K-3M-LoF" id="wf4-wo-xEH"/>
+                        <outlet property="button2" destination="EA7-8w-3Qe" id="0iE-9i-Re8"/>
+                        <outlet property="button3" destination="6Wu-dw-vCF" id="oOe-QR-Hyj"/>
+                        <outlet property="button4" destination="hh0-vx-pdA" id="unm-ln-hYd"/>
+                        <outlet property="button5" destination="b9f-UV-EKR" id="EFK-0A-Ycg"/>
+                        <outlet property="button6" destination="7bN-7D-L9E" id="wb9-At-eZK"/>
+                        <outlet property="button7" destination="T6N-fb-yNV" id="ZVd-ta-4Ns"/>
+                        <outlet property="button8" destination="Ufj-aH-PK3" id="kVH-Ue-8tz"/>
+                        <outlet property="button9" destination="aSu-of-Bj9" id="BP9-Wv-Eqf"/>
+                        <outlet property="timerLabel" destination="pM1-gF-eNl" id="gtg-Be-AQA"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="hNR-I0-W5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elY-dq-xhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909" y="16"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="anR-eh-nVo">
+            <objects>
+                <viewController id="Vc8-bN-IXT" customClass="MNKPictureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pzY-ld-nhW"/>
+                        <viewControllerLayoutGuide type="bottom" id="gMp-sJ-hke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="suo-xb-prg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlm-1l-9Io">
+                                <rect key="frame" x="141" y="121" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j10-n5-13t">
+                                <rect key="frame" x="35" y="39" width="251" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Complete the picture">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdn-JU-woB">
+                                <rect key="frame" x="13" y="11" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold_frame_square_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="pj2-xG-Q6r">
+                                <rect key="frame" x="40" y="273" width="240" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep BL.png" translatesAutoresizingMaskIntoConstraints="NO" id="blh-dq-lFy">
+                                <rect key="frame" x="220" y="120" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep BR.png" translatesAutoresizingMaskIntoConstraints="NO" id="WaK-An-HxM">
+                                <rect key="frame" x="160" y="393" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep TR.png" translatesAutoresizingMaskIntoConstraints="NO" id="u8s-dz-PID">
+                                <rect key="frame" x="26" y="167" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep TL.png" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-Hn-YeS">
+                                <rect key="frame" x="80" y="313" width="80" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69879792840873955" blue="0.38998818886357345" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sheepBL" destination="blh-dq-lFy" id="4Wu-ol-ttu"/>
+                        <outlet property="sheepTR" destination="u8s-dz-PID" id="bnC-kH-Soy"/>
+                        <outlet property="timerLabel" destination="Rlm-1l-9Io" id="RiM-Ba-BhM"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="GnA-cx-gXJ"/>
+                        <segue destination="g46-uk-I7G" kind="modal" identifier="outOfSheep" animates="NO" id="NQE-Ti-hcX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAc-hR-FCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3339" y="-716"/>
+        </scene>
+        <!--Sheep View Controller-->
+        <scene sceneID="1Z6-cE-nQg">
+            <objects>
+                <viewController id="g46-uk-I7G" customClass="MNKSheepViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvE-lj-CR1"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEG-1M-F20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v1Y-El-eyi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1P-Iw-f5j">
+                                <rect key="frame" x="141" y="113" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-5e-keQ">
+                                <rect key="frame" x="13" y="11" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vya-o9-scA">
+                                <rect key="frame" x="54" y="42" width="218" height="43"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Pet the sheep">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold_frame_square_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="qGe-Gt-AhO">
+                                <rect key="frame" x="43" y="274" width="240" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tumblr_mlrflyZjfs1qezllmo1_400.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sJm-Py-Bha">
+                                <rect key="frame" x="83" y="314" width="160" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66227503803300081" green="1" blue="0.43925397400348831" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sheep" destination="sJm-Py-Bha" id="lcG-Ft-BD7"/>
+                        <outlet property="timerLabel" destination="A1P-Iw-f5j" id="c1g-am-E2s"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="lm9-hV-f3E"/>
+                        <segue destination="3Xg-Uf-UXQ" kind="modal" identifier="outOfPet" animates="NO" id="Baa-04-PWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOu-fL-YHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3763" y="16"/>
+        </scene>
+        <!--Timed View Controller-->
+        <scene sceneID="bwh-Kx-Qir">
+            <objects>
+                <viewController id="3Xg-Uf-UXQ" customClass="MNKTimedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZk-kd-sB0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZtV-Jy-TMf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yJk-RW-Uuf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ws5-XM-h3x">
+                                <rect key="frame" x="51" y="42" width="218" height="43"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Stare at the sheep">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATH-Ls-1go">
+                                <rect key="frame" x="14" y="10" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold_frame_square_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="fGt-8f-aau">
+                                <rect key="frame" x="40" y="272" width="240" height="240"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-4C-AxC">
+                                <rect key="frame" x="80" y="312" width="161" height="160"/>
+                                <state key="normal" image="tumblr_mlrflyZjfs1qezllmo1_400.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sheepTouched:" destination="3Xg-Uf-UXQ" eventType="touchUpInside" id="fVj-Rz-5Fq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44152181450680295" green="0.88556007002278836" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="aye-cn-drK" kind="modal" identifier="outOfStare" animates="NO" id="JQR-08-R3Y"/>
+                        <segue destination="akW-I5-s1e" kind="modal" identifier="toWarning" animates="NO" id="OWa-fW-38X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQY-qC-4aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4218" y="16"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KgL-Is-kAf">
+            <objects>
+                <viewController id="akW-I5-s1e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTT-At-apr"/>
+                        <viewControllerLayoutGuide type="bottom" id="W37-fd-QuI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d0x-mQ-xfS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as6-bh-d3w">
+                                <rect key="frame" x="3" y="154" width="304" height="43"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Excuse me, please do">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-dC-zP8">
+                                <rect key="frame" x="18" y="184" width="289" height="43"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="not touch the valuable">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKW-Kb-BNe">
+                                <rect key="frame" x="-36" y="215" width="289" height="43"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="artwork, idiot!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xy-wd-niH">
+                                <rect key="frame" x="75" y="460" width="161" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="y58-bq-W2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uA6-Lk-jew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4218" y="686"/>
+        </scene>
+        <!--Shake View Controller-->
+        <scene sceneID="eUf-mm-K7a">
+            <objects>
+                <viewController id="aye-cn-drK" customClass="MNKShakeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wGu-Lp-KU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="HhA-ec-loz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ghb-zx-xoF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qi6-di-B4E">
+                                <rect key="frame" x="44" y="44" width="218" height="52"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                <state key="normal" title="Now kill it!">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8T-wU-tu3">
+                                <rect key="frame" x="15" y="8" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-Us-A2f">
+                                <rect key="frame" x="0.0" y="440" width="321" height="52"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                <state key="normal" title="(Shake the iPhone to cause">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ij-cV-7IV">
+                                <rect key="frame" x="20" y="465" width="270" height="52"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                <state key="normal" title="a fatal earthquake)">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiT-Dc-tm4">
+                                <rect key="frame" x="141" y="104" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Yi-N9t">
+                                <rect key="frame" x="75" y="226" width="161" height="160"/>
+                                <state key="normal" image="tumblr_mlrflyZjfs1qezllmo1_400.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="QMK-oe-idS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F5y-Mg-HNg"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="JiT-Dc-tm4" id="DPj-g4-PmA"/>
+                        <segue destination="6Cl-ak-vRC" kind="modal" identifier="outOfKill" animates="NO" id="Bxu-Fv-7Vk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A74-2j-8Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4665" y="16"/>
+        </scene>
+        <!--View Controller Untimed-->
+        <scene sceneID="L7I-AZ-6dj">
+            <objects>
+                <viewController id="6Cl-ak-vRC" customClass="MNKViewControllerUntimed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FGP-5l-gmq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qyS-sN-0dg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m7L-jI-7aE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-Y5-tC1">
+                                <rect key="frame" x="-16" y="0.0" width="353" height="351"/>
+                                <state key="normal" image="lamb_chop.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YJu-GA-qax" kind="modal" animates="NO" id="CPF-Ov-Sj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZN-N6-Pv0">
+                                <rect key="frame" x="5" y="411" width="311" height="49"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="37"/>
+                                <state key="normal" title="Congradulations,">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-1H-ugJ">
+                                <rect key="frame" x="8" y="454" width="304" height="47"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="35"/>
+                                <state key="normal" title="You made dinner!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJJ-r9-ZTA">
+                                <rect key="frame" x="81" y="509" width="159" height="31"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="19"/>
+                                <state key="normal" title="(Tap to continue)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prf-b3-fBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5112" y="16"/>
+        </scene>
+        <!--Selfie View Controller-->
+        <scene sceneID="s2S-NG-o2z">
+            <objects>
+                <viewController id="YJu-GA-qax" customClass="MNKSelfieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tF2-4E-vcn"/>
+                        <viewControllerLayoutGuide type="bottom" id="yCx-xd-uRY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ni0-VY-YDG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24284681-handsome-guy-with-pink-shirt--and-open-hand-on-white-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FIp-Xh-Qnj">
+                                <rect key="frame" x="0.0" y="90" width="320" height="434"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx6-HT-Iao">
+                                <rect key="frame" x="5" y="8" width="301" height="37"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="28"/>
+                                <state key="normal" title="Take a selfie with the">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-53-BLZ">
+                                <rect key="frame" x="20" y="46" width="286" height="38"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="27"/>
+                                <state key="normal" title="sheep to celebrate!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm5-6w-zro">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="4Uk-2A-qtP">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="cameraBtnAction:" destination="YJu-GA-qax" id="LSh-k9-ZJi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="69" style="plain" systemItem="fixedSpace" id="dup-aG-hek"/>
+                                    <barButtonItem style="plain" id="MNj-vn-2h8">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hv6-zp-gGM">
+                                            <rect key="frame" x="120" y="6" width="94" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                            <state key="normal" title="Main Menu">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="H5K-u9-xTt"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem width="61" style="plain" systemItem="fixedSpace" id="4gp-GY-P3f"/>
+                                    <barButtonItem systemItem="action" id="3di-hx-q9M">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="shareBtnAction:" destination="YJu-GA-qax" id="eaF-jn-bst"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tumblr_mlrflyZjfs1qezllmo1_400.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jN7-qw-JCL">
+                                <rect key="frame" x="202" y="154" width="104" height="104"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="photoView" destination="FIp-Xh-Qnj" id="6yC-oS-w9M"/>
+                        <outlet property="sheepView" destination="jN7-qw-JCL" id="E2G-kT-S7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHg-iP-sIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5605" y="16"/>
+        </scene>
+        <!--Accel View Controller-->
+        <scene sceneID="ktt-uL-7dn">
+            <objects>
+                <viewController id="5CY-f5-oRg" customClass="MNKAccelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3bW-GZ-oqH"/>
+                        <viewControllerLayoutGuide type="bottom" id="UBb-Pl-wbR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q4R-cy-IeA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la3-mX-diO">
+                                <rect key="frame" x="141" y="124" width="39" height="79"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-1j-Vae">
+                                <rect key="frame" x="20" y="48" width="280" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Move the ball to the top">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4r-mm-NmD">
+                                <rect key="frame" x="12" y="9" width="21" height="26"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1194986802274589086football_ball_brice_boye_01.svg.med.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-PA-3bc">
+                                <rect key="frame" x="110" y="277" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70618588039999997" green="0.4974024018" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ball" destination="Tee-PA-3bc" id="39H-XE-94r"/>
+                        <outlet property="timerLabel" destination="la3-mX-diO" id="gAC-dJ-nD6"/>
+                        <segue destination="FCV-I3-KAV" kind="modal" identifier="outOfAccelerometer" animates="NO" id="Wff-K5-lx1"/>
+                        <segue destination="ymF-vc-jUy" kind="modal" identifier="timeUp" animates="NO" id="Zjs-SA-q6U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1Y-gA-2vC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="-695"/>
+        </scene>
+        <!--View Controller Untimed-->
+        <scene sceneID="DNU-ZL-5MO">
+            <objects>
+                <viewController id="kt1-8W-VtC" customClass="MNKViewControllerUntimed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h4w-FC-Hyg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wPy-iL-9rG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X0P-6u-gT8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc3-fg-kgE">
+                                <rect key="frame" x="23" y="188" width="274" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="WTF are you colorblind?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahS-F1-dMc">
+                                <rect key="frame" x="80" y="474" width="161" height="36"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="D44-pK-hDq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0588715764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKh-eF-zzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="686"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="119498475589498995button-red_benji_park_01.svg.med.png" width="300" height="300"/>
+        <image name="1194986802274589086football_ball_brice_boye_01.svg.med.png" width="297" height="298"/>
+        <image name="24284681-handsome-guy-with-pink-shirt--and-open-hand-on-white-background.jpg" width="113" height="168"/>
+        <image name="Sheep BL.png" width="80" height="80"/>
+        <image name="Sheep BR.png" width="80" height="80"/>
+        <image name="Sheep TL.png" width="80" height="80"/>
+        <image name="Sheep TR.png" width="80" height="80"/>
+        <image name="a-black-circle-md.png" width="299" height="288"/>
+        <image name="gold_frame_square_3.png" width="644" height="644"/>
+        <image name="lamb_chop.jpg" width="3872" height="2592"/>
+        <image name="tsunami-md.png" width="300" height="300"/>
+        <image name="tumblr_mlrflyZjfs1qezllmo1_400.jpg" width="400" height="400"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="y58-bq-W2Y"/>
+        <segue reference="NQE-Ti-hcX"/>
+        <segue reference="GnA-cx-gXJ"/>
+        <segue reference="Wff-K5-lx1"/>
+        <segue reference="iQk-P6-azf"/>
+    </inferredMetricsTieBreakers>
+</document>
